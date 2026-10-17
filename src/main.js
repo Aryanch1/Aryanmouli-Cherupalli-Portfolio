@@ -4,6 +4,7 @@ import '@fontsource/big-shoulders-display/900';
 import '@fontsource-variable/geist';
 import '@fontsource-variable/geist-mono';
 import '@fontsource-variable/pixelify-sans';
+import { inject } from '@vercel/analytics';
 import './style.css';
 
 import gsap from 'gsap';
@@ -12,7 +13,7 @@ import { SplitText } from 'gsap/SplitText';
 import Lenis from 'lenis';
 import { Stage, SHAPE } from './gl/stage.js';
 import { MODES, CRAFT, RING, STACK_GROUPS } from './content.js';
-
+inject();
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const BASE = import.meta.env.BASE_URL;

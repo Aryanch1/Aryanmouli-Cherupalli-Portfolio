@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" data-mode="designer">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Aryanmouli Cherupalli — Full-Stack Developer &amp; AI Engineer</title>
+  <meta name="description" content="Aryanmouli Cherupalli is a full-stack developer with 4 years of experience in Java, Spring Boot, React and AWS, building AI-powered products with LLMs and RAG." />
+  <meta name="theme-color" content="#05060a" />
+  <meta property="og:title" content="Aryanmouli Cherupalli — Full-Stack Developer &amp; AI Engineer" />
+  <meta property="og:description" content="I build products. I build AI systems." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5a1f'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='28' text-anchor='middle' fill='%2305060a'%3EAC%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <p class="loader__label">Aryanmouli <span>/ portfolio</span></p>
+    <p class="loader__count"><span id="loaderCount">000</span></p>
+    <p class="loader__status" id="loaderStatus">Loading both versions of me</p>
+    <i class="loader__bar" id="loaderBar"></i>
+  </div>
+
+  <canvas class="gl" id="gl" aria-hidden="true"></canvas>
+  <i class="progress" id="progress" aria-hidden="true"></i>
+  <div class="cursor" id="cursor" aria-hidden="true"><i class="cursor__ring"><b id="cursorLabel"></b></i><i class="cursor__dot"></i></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#hero" aria-label="Aryanmouli Cherupalli, back to top">AC</a>
+    <nav class="nav__pill" id="navMenu" aria-label="Primary">
+      <a href="#hero">Home</a>
+      <a href="#work">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav__contact-m">Let’s talk</a>
+    </nav>
+    <a class="nav__cta" href="#contact" data-magnetic>Let’s talk</a>
+    <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" id="hero">
+      <img class="hero__fallback" src="/assets/img/hero-human-sm.webp" alt="" />
+      <div class="hero__copy">
+        <p class="eyebrow" data-intro><i class="dot"></i>Aryanmouli Cherupalli <span>— United States</span></p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="sr-only">Aryanmouli Cherupalli. </span>
+          <span class="ln" data-intro><span>I build</span></span>
+          <span class="ln" data-intro><span>products.</span></span>
+        </h1>
+        <p class="hero__roles" data-intro>Full-Stack Developer <i>/</i> AI Engineer <i>/</i> AWS Certified</p>
+      </div>
+
+      <div class="hero__foot" data-intro>
+        <p id="heroBody"><span class="lead"><strong>Full-stack developer with 4 years of experience</strong> turning requirements into fast, secure, production-grade software. At Citratek I shipped <b>3 microservices</b> exposing <b>10 GraphQL operations</b>, cut response times by <b>~30%</b> with Redis caching and deployment time by <b>~40%</b> with Docker and CI/CD on AWS.</span> <span class="more">I've built React and Spring Boot platforms, a Flutter app and semantic search over <b>5K+ documents</b>. I also think like an attacker: I analysed <b>1M+ security events</b> at Palo Alto Networks and saw <b>75%</b> of reported vulnerabilities fixed. Published researcher, Master's graduate, and the engineer who ships it end to end.</span> <em class="trust">Every number here is backed by a project, a role or a certificate you can open below.</em></p>
+        <ul class="hero__skills" id="heroSkills" aria-label="Skills"><li>Java</li><li>Spring Boot</li><li>React</li><li>Node.js</li><li>TypeScript</li><li>GraphQL</li><li>PostgreSQL</li><li>Redis</li><li>AWS</li><li>Docker</li><li>CI/CD</li><li>OWASP</li></ul>
+        <a class="btn" href="#work" data-magnetic data-cursor="">See the work
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </a>
+      </div>
+
+      <dl class="hero__stats" data-intro>
+        <div><dt>years building software</dt><dd><span data-count="4">0</span></dd></div>
+        <div><dt>DSA problems solved</dt><dd><span data-count="900">0</span><sup>+</sup></dd></div>
+        <div><dt>AWS certifications</dt><dd><span data-count="3">0</span></dd></div>
+      </dl>
+
+      <div class="hero__dock" data-intro>
+        <div class="switch" role="group" aria-label="Choose which side of my work to show">
+          <button type="button" data-mode="designer" aria-pressed="true" data-cursor="">Full-Stack</button>
+          <button type="button" data-mode="engineer" aria-pressed="false" data-cursor="">AI</button>
+          <i class="switch__thumb" aria-hidden="true"></i>
+        </div>
+        <p class="hero__hint" id="heroHint">Move to augment · Click to switch</p>
+      </div>
+      <div class="hero__certs" data-intro aria-label="Certifications: 3 AWS and 12 Anthropic">
+        <p class="hero__certs-label"><i class="dot"></i>Certified <b>15</b></p>
+        <div class="hero__certs-view">
+          <div class="hero__certs-track">
+            <div class="hero__certs-set"><a class="hcert hcert--aws" href="certificates/aws/ai-practitioner.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/aws/ai-practitioner.webp" alt="" width="64" height="48" decoding="async" /><span>AWS Certified AI Practitioner</span></a><a class="hcert hcert--aws" href="certificates/aws/cloud-practitioner.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/aws/cloud-practitioner.webp" alt="" width="64" height="48" decoding="async" /><span>AWS Certified Cloud Practitioner</span></a><a class="hcert hcert--aws" href="certificates/aws/developer-associate.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/aws/developer-associate.webp" alt="" width="64" height="48" decoding="async" /><span>AWS Certified Developer – Associate</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/ai-fluency-frameworks.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/ai-fluency-frameworks.webp" alt="" width="64" height="48" decoding="async" /><span>AI Fluency: Frameworks &amp; Foundations</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/ai-fluency-capabilities.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/ai-fluency-capabilities.webp" alt="" width="64" height="48" decoding="async" /><span>AI Fluency: AI Capabilities &amp; Limitations</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-code-101.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/claude-code-101.webp" alt="" width="64" height="48" decoding="async" /><span>Claude Code 101</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-code-in-action.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/claude-code-in-action.webp" alt="" width="64" height="48" decoding="async" /><span>Claude Code in Action</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-platform-101.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/claude-platform-101.webp" alt="" width="64" height="48" decoding="async" /><span>Claude Platform 101</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-vertex-ai.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/claude-vertex-ai.webp" alt="" width="64" height="48" decoding="async" /><span>Claude with Google Vertex AI</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-api.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/claude-api.webp" alt="" width="64" height="48" decoding="async" /><span>Claude with the Anthropic API</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/agent-skills.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/agent-skills.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Agent Skills</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-cowork.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/claude-cowork.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Claude Cowork</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/mcp-intro.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/mcp-intro.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Model Context Protocol</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/mcp-advanced.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/mcp-advanced.webp" alt="" width="64" height="48" decoding="async" /><span>Model Context Protocol: Advanced Topics</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/subagents.pdf" target="_blank" rel="noopener" data-cursor="Open"><img src="/certificates/anthropic/subagents.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Subagents</span></a></div>
+            <div class="hero__certs-set" aria-hidden="true"><a class="hcert hcert--aws" href="certificates/aws/ai-practitioner.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/aws/ai-practitioner.webp" alt="" width="64" height="48" decoding="async" /><span>AWS Certified AI Practitioner</span></a><a class="hcert hcert--aws" href="certificates/aws/cloud-practitioner.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/aws/cloud-practitioner.webp" alt="" width="64" height="48" decoding="async" /><span>AWS Certified Cloud Practitioner</span></a><a class="hcert hcert--aws" href="certificates/aws/developer-associate.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/aws/developer-associate.webp" alt="" width="64" height="48" decoding="async" /><span>AWS Certified Developer – Associate</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/ai-fluency-frameworks.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/ai-fluency-frameworks.webp" alt="" width="64" height="48" decoding="async" /><span>AI Fluency: Frameworks &amp; Foundations</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/ai-fluency-capabilities.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/ai-fluency-capabilities.webp" alt="" width="64" height="48" decoding="async" /><span>AI Fluency: AI Capabilities &amp; Limitations</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-code-101.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/claude-code-101.webp" alt="" width="64" height="48" decoding="async" /><span>Claude Code 101</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-code-in-action.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/claude-code-in-action.webp" alt="" width="64" height="48" decoding="async" /><span>Claude Code in Action</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-platform-101.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/claude-platform-101.webp" alt="" width="64" height="48" decoding="async" /><span>Claude Platform 101</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-vertex-ai.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/claude-vertex-ai.webp" alt="" width="64" height="48" decoding="async" /><span>Claude with Google Vertex AI</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-api.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/claude-api.webp" alt="" width="64" height="48" decoding="async" /><span>Claude with the Anthropic API</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/agent-skills.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/agent-skills.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Agent Skills</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/claude-cowork.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/claude-cowork.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Claude Cowork</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/mcp-intro.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/mcp-intro.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Model Context Protocol</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/mcp-advanced.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/mcp-advanced.webp" alt="" width="64" height="48" decoding="async" /><span>Model Context Protocol: Advanced Topics</span></a><a class="hcert hcert--anthropic" href="certificates/anthropic/subagents.pdf" target="_blank" rel="noopener" data-cursor="Open" tabindex="-1"><img src="/certificates/anthropic/subagents.webp" alt="" width="64" height="48" decoding="async" /><span>Introduction to Subagents</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── INTRO (phones and short landscape screens only) ───────────── -->
+    <section class="intro-m" id="introM" aria-label="Introduction">
+      <p class="intro-m__body" id="introBody"></p>
+      <ul class="hero__skills" id="introSkills" aria-label="Skills"></ul>
+      <a class="btn" href="#work">See the work
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </a>
+    </section>
+
+    <!-- ───────────── POSITION ───────────── -->
+    <section class="manifesto" id="manifesto">
+      <p class="label" data-reveal>(01) Position</p>
+      <h2 class="manifesto__lines" id="manifestoLines">Full-stack by trade. <em>AI builder by curiosity.</em> Security-minded by training.</h2>
+      <div class="manifesto__foot">
+        <p data-reveal>I build cloud-native microservices and web applications, and add LLM and RAG capabilities that automate workflows and improve search. I have analysed 1M+ security events, built AI projects that cut educator workload by 80%, and solved 900+ data structures and algorithms problems.</p>
+        <p class="manifesto__meta" data-reveal>Developer at <b>Citratek</b><br />Master’s, <b>Wilmington University</b></p>
+      </div>
+    </section>
+
+    <!-- ───────────── CRAFT (pinned) ───────────── -->
+    <section class="craft" id="craft">
+      <div class="craft__pin" id="craftPin">
+        <header class="craft__head">
+          <p class="label">(02) Craft</p>
+          <p class="craft__count"><b id="craftIndex">01</b><span>/ 03</span></p>
+        </header>
+        <div class="craft__grid">
+          <div class="craft__text" id="craftText"></div>
+          <div class="craft__media" id="craftMedia" data-tilt></div>
+          <div class="craft__space" aria-hidden="true"></div>
+        </div>
+        <ol class="craft__rail" id="craftRail"></ol>
+      </div>
+    </section>
+
+    <!-- ───────────── WORK ───────────── -->
+    <section class="work" id="work">
+      <header class="section-head">
+        <p class="label" data-reveal>(03) Projects</p>
+        <h2 data-split>Built, shipped, <em>running.</em></h2>
+      </header>
+
+      <div class="work__list">
+        <article class="card" style="--i:0; --accent:#45e6ff">
+          <div class="card__meta">
+            <span class="card__index">01</span>
+            <p class="card__kicker">AI-powered learning platform</p>
+            <h3><a class="card__open" href="https://edu-friened-12.web.app/login" target="_blank" rel="noopener" data-cursor="Open">BridgeAI</a></h3>
+            <p class="card__desc">A Python and LangGraph orchestration engine chaining 4 agent steps, with RAG over 500+ documents in Pinecone. It cut educator quiz-creation workload and made learning resources easier to find.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Full-stack · AI engineer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Python</li><li>LangGraph</li><li>LLM</li><li>Pinecone</li><li>RAG</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://edu-friened-12.web.app/login" target="_blank" rel="noopener" data-cursor="Open">Live link <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual metrics" data-tilt><div><b>80%</b><span>less quiz-creation workload</span></div><div><b>60%</b><span>better learning efficiency</span></div><div><b>75%</b><span>better resource discovery</span></div><div><b>15→3%</b><span>failed generations</span></div></div>
+        </article>
+        <article class="card" style="--i:1; --accent:#ff5a1f">
+          <div class="card__meta">
+            <span class="card__index">02</span>
+            <p class="card__kicker">Professional · Citratek Inc.</p>
+            <h3>Microservices &amp; semantic search</h3>
+            <p class="card__desc">Three Node.js and TypeScript microservices exposing GraphQL, secured with OAuth2 and RBAC, cached with Redis and deployed on AWS. Plus an AI semantic search feature over 5K+ documents.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Full-Stack Developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Node.js</li><li>GraphQL</li><li>Redis</li><li>AWS</li><li>LangChain</li></ul></dd></div>
+            </dl>
+          </div>
+          <div class="card__visual metrics" data-tilt><div><b>3</b><span>microservices</span></div><div><b>10</b><span>GraphQL queries &amp; mutations</span></div><div><b>~30%</b><span>faster responses</span></div><div><b>~40%</b><span>faster deployments</span></div></div>
+        </article>
+        <article class="card" style="--i:2; --accent:#8f7bff">
+          <div class="card__meta">
+            <span class="card__index">03</span>
+            <p class="card__kicker">Full-stack web &amp; mobile</p>
+            <h3>EduFriend</h3>
+            <p class="card__desc">A React web app, Python and Flask REST APIs on Firebase, and a Flutter mobile app with a Kotlin module. Infrastructure provisioned with CDK and CloudFormation, deployed as Docker containers on ECS and EC2.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Full-stack developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>React</li><li>Flask</li><li>Flutter</li><li>Firebase</li><li>AWS CDK</li></ul></dd></div>
+            </dl>
+          </div>
+          <div class="card__visual metrics" data-tilt><div><b>12</b><span>REST endpoints</span></div><div><b>6</b><span>mobile screens</span></div><div><b>50+</b><span>test users</span></div><div><b>~30%</b><span>faster API responses</span></div></div>
+        </article>
+        <article class="card" style="--i:3; --accent:#7dffb0">
+          <div class="card__meta">
+            <span class="card__index">04</span>
+            <p class="card__kicker">AI-powered web application</p>
+            <h3>Smart Hotel Reservation Agent</h3>
+            <p class="card__desc">A conversational hotel search assistant on Python, Streamlit and a Gemini LLM via Google ADK. It searches, compares and recommends, with prices aggregated and ranked from 4 booking sources.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Full-stack · AI developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Python</li><li>Streamlit</li><li>Gemini</li><li>Google ADK</li></ul></dd></div>
+            </dl>
+          </div>
+          <div class="card__visual metrics" data-tilt><div><b>4</b><span>booking sources</span></div><div><b>~50%</b><span>less manual comparison</span></div><div><b>3</b><span>tasks: search, compare, book</span></div></div>
+        </article>
+        <article class="card" style="--i:4; --accent:#7dffb0">
+          <div class="card__meta">
+            <span class="card__index">05</span>
+            <p class="card__kicker">Bachelor’s project · Published research paper</p>
+            <h3><a class="card__open" href="https://ijisrt.com/smart-irrigation-system-with-lora-recording-of-lora-broadcast-using-rtlsdr-dongle-for-spectrum-analyzation" target="_blank" rel="noopener" data-cursor="Open">Smart Irrigation System with LoRa</a></h3>
+            <p class="card__desc">Sensor nodes read soil moisture and humidity and send it over long-range LoRa to a Raspberry Pi gateway. A web app with SMS two-factor login lets you watch the field and control the water motors, manually or automatically from sensor thresholds, and the LoRa broadcast is recorded with an RTL-SDR dongle for spectrum analysis. Published in the International Journal of Innovative Science and Research Technology.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Co-author · VBIT</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>LoRa SX1278</li><li>Raspberry Pi</li><li>NodeMCU</li><li>DHT11</li><li>RTL-SDR</li></ul></dd></div>
+            </dl>
+            <div class="card__links"><a class="link" href="https://ijisrt.com/smart-irrigation-system-with-lora-recording-of-lora-broadcast-using-rtlsdr-dongle-for-spectrum-analyzation" target="_blank" rel="noopener" data-cursor="Open">Published paper <span aria-hidden="true">↗</span></a><a class="link" href="papers/smart-irrigation-lora-paper.pdf" target="_blank" rel="noopener" data-cursor="Open">Paper PDF <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="card__visual metrics" data-tilt><div><b>120</b><span>devices reachable over LoRaWAN</span></div><div><b>2FA</b><span>SMS login for the web app</span></div><div><b>SDR</b><span>RTL-SDR LoRa spectrum recording</span></div><div><b>Auto</b><span>valve opens on sensor thresholds, or manual control</span></div></div>
+        </article>
+        <article class="card" style="--i:5; --accent:#ffcf6b">
+          <div class="card__meta">
+            <span class="card__index">06</span>
+            <p class="card__kicker">Bachelor’s mini-project · Aug – Nov 2021</p>
+            <h3>Solar Light Design for Night Time</h3>
+            <p class="card__desc">A solar-powered street light. A panel charges a LiFePO4 battery through a charge controller by day. At night a PIR sensor with a 5 to 12 m range switches an LED bank between bright and dim through a MOSFET switch, while a 7805 regulator keeps the supply steady. Built as a B.Tech mini-project with a full written report.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Project team member · VBIT</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Solar PV</li><li>PIR sensor</li><li>Charge controller</li><li>MOSFET</li><li>LiFePO4 battery</li></ul></dd></div>
+            </dl>
+            <div class="card__links"><a class="link" href="papers/solar-light-project-report.pdf" target="_blank" rel="noopener" data-cursor="Open">Project report (PDF) <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="card__visual metrics" data-tilt><div><b>90%</b><span>less manual work, per the report</span></div><div><b>PIR</b><span>5 to 12 m motion detection</span></div><div><b>18Ah</b><span>12.8 V LiFePO4 battery</span></div><div><b>Auto</b><span>dusk-to-dawn operation</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── EXPERIENCE ───────────── -->
+    <section class="exp" id="experience">
+      <header class="section-head">
+        <p class="label" data-reveal>(04) Experience</p>
+        <h2 data-split>Where I have <em>shipped.</em></h2>
+      </header>
+      <div class="exp__list">
+        <article class="role" data-reveal>
+          <p class="role__when">Jun 2025 — Present<br />Tampa, Florida</p>
+          <div><h3>Full-Stack Developer</h3><p class="role__org">Citratek Inc.</p><ul><li>Built and maintained 3 Node.js and TypeScript microservices exposing 10 GraphQL queries and mutations, with OAuth2, RBAC and secure coding aligned to the OWASP Top 10.</li><li>Added Redis caching and tuned MongoDB and DynamoDB data access, cutting average response time by about 30%.</li><li>Deployed services on AWS (Lambda, S3, API Gateway, SQS) with Docker, GitHub Actions and CI/CD, cutting deployment time by about 40%.</li><li>Built an AI semantic search feature with Python, RAG, LangChain and Pinecone over 5K+ documents.</li><li>Wrote integration tests with Jest (about 60% coverage) and tracked sprint work in Jira.</li><li>Hardened every service with input validation, HTTPS and CORS rules, and took part in code reviews before changes shipped.</li><li>Worked across the whole stack, from API design and data access to cloud deployment and monitoring of the running services.</li></ul></div>
+        </article>
+        <article class="role" data-reveal>
+          <p class="role__when">Jan 2021 — Feb 2023<br />Hyderabad, India</p>
+          <div><h3>Junior Software Developer</h3><p class="role__org">Corematiq Inc.</p><ul><li>Developed and maintained 4 web application modules with Java, Spring Boot, JavaScript, HTML5 and CSS3, under senior developer guidance.</li><li>Built and integrated 6 REST APIs with Spring Boot, connected them to React.js front-end components and tested endpoints with Postman.</li><li>Optimised SQL queries and supported schema design for 3 PostgreSQL tables, improving data retrieval time by about 20%.</li><li>Implemented JWT authentication for secure login and session management across 2 internal web applications.</li><li>Supported the SDLC from requirements gathering through to deployment.</li><li>Collaborated in Agile sprints, daily standups and code reviews with Git, wrote unit tests, fixed 20+ bugs and maintained technical documentation.</li></ul></div>
+        </article>
+        <article class="role" data-reveal>
+          <p class="role__when">Oct 2021 — Dec 2021<br />USA</p>
+          <div><h3>Cybersecurity Analyst Intern</h3><p class="role__org">Palo Alto Networks</p><ul><li>Ran vulnerability assessments and penetration tests with Metasploit on 5 applications and network systems, with 25% of findings rated high or critical.</li><li>Documented every finding with remediation steps aligned with the OWASP Top 10.</li><li>Monitored and analysed 1M+ security events with Wireshark and system logs, covering log analysis, threat detection and root cause analysis, and escalated 35% as confirmed incidents.</li><li>Reviewed authentication and access controls (JWT, OAuth2, RBAC) and verified HTTPS and CORS configurations as part of network security and risk assessment.</li><li>Recommended secure coding fixes for 8 issues, with 75% of reported vulnerabilities remediated by the end of the internship.</li></ul></div>
+        </article>
+        <article class="role" data-reveal>
+          <p class="role__when">2023 — 2025<br />USA</p>
+          <div><h3>Master’s, Information Systems Technologies</h3><p class="role__org">Wilmington University · Grade 3.8</p><ul><li>Postgraduate study in information systems, completed while building AI and full-stack projects such as BridgeAI, EduFriend and the Smart Hotel Reservation Agent.</li></ul></div>
+        </article>
+        <article class="role" data-reveal>
+          <p class="role__when">Hyderabad, India</p>
+          <div><h3>Bachelor’s, Electronics &amp; Communication Engineering</h3><p class="role__org">Vignana Bharathi Institute of Technology · Grade 3.75</p><ul><li>Engineering foundation in electronics and communication systems before moving into software development.</li><li>Co-authored a research paper on a LoRa-based smart irrigation system, published in the International Journal of Innovative Science and Research Technology (IJISRT), and built a solar-powered smart street light as a mini-project. See Projects.</li></ul></div>
+        </article>
+        <article class="role" data-reveal>
+          <p class="role__when">Certifications<br />&amp; achievements</p>
+          <div><h3>Certified &amp; practised</h3><p class="role__org">AWS · Anthropic · DSA</p><ul><li>AWS Certified: AI Practitioner (AIF-C01), Cloud Practitioner (CLF-C02) and Developer Associate (DVA-C02).</li><li>10+ Anthropic certifications, including AI Fluency, Model Context Protocol (Introduction and Advanced), Claude with Google Vertex AI, Claude Code 101, Claude Code in Action, Claude Platform 101, Agent Skills and Subagents.</li><li>Solved 900+ data structures and algorithms problems across LeetCode and GeeksforGeeks.</li></ul></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── CERTIFICATES ───────────── -->
+    <section class="certs" id="certificates">
+      <header class="section-head">
+        <p class="label" data-reveal>(05) Certificates</p>
+        <h2 data-split>Verified <em>credentials.</em></h2>
+      </header>
+      <div class="certs__group" data-reveal>
+        <h3 class="certs__title"><i></i>AWS · 3 certifications</h3>
+        <div class="certs__grid certs__grid--badge">
+          <a class="cert cert--badge" href="certificates/aws/ai-practitioner.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/aws/ai-practitioner.webp" alt="AWS Certified AI Practitioner certificate" loading="lazy" /></span><b>AWS Certified AI Practitioner</b><em>AIF-C01 · Open certificate ↗</em></a>
+          <a class="cert cert--badge" href="certificates/aws/cloud-practitioner.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/aws/cloud-practitioner.webp" alt="AWS Certified Cloud Practitioner certificate" loading="lazy" /></span><b>AWS Certified Cloud Practitioner</b><em>CLF-C02 · Open certificate ↗</em></a>
+          <a class="cert cert--badge" href="certificates/aws/developer-associate.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/aws/developer-associate.webp" alt="AWS Certified Developer – Associate certificate" loading="lazy" /></span><b>AWS Certified Developer – Associate</b><em>DVA-C02 · Open certificate ↗</em></a>
+        </div>
+      </div>
+      <div class="certs__group" data-reveal>
+        <h3 class="certs__title"><i></i>Anthropic Education · 12 certificates</h3>
+        <div class="certs__grid">
+          <a class="cert" href="certificates/anthropic/ai-fluency-frameworks.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/ai-fluency-frameworks.webp" alt="AI Fluency: Frameworks & Foundations certificate" loading="lazy" /></span><b>AI Fluency: Frameworks &amp; Foundations</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/ai-fluency-capabilities.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/ai-fluency-capabilities.webp" alt="AI Fluency: AI Capabilities & Limitations certificate" loading="lazy" /></span><b>AI Fluency: AI Capabilities &amp; Limitations</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/claude-code-101.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/claude-code-101.webp" alt="Claude Code 101 certificate" loading="lazy" /></span><b>Claude Code 101</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/claude-code-in-action.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/claude-code-in-action.webp" alt="Claude Code in Action certificate" loading="lazy" /></span><b>Claude Code in Action</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/claude-platform-101.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/claude-platform-101.webp" alt="Claude Platform 101 certificate" loading="lazy" /></span><b>Claude Platform 101</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/claude-vertex-ai.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/claude-vertex-ai.webp" alt="Claude with Google Vertex AI certificate" loading="lazy" /></span><b>Claude with Google Vertex AI</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/claude-api.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/claude-api.webp" alt="Claude with the Anthropic API certificate" loading="lazy" /></span><b>Claude with the Anthropic API</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/agent-skills.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/agent-skills.webp" alt="Introduction to Agent Skills certificate" loading="lazy" /></span><b>Introduction to Agent Skills</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/claude-cowork.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/claude-cowork.webp" alt="Introduction to Claude Cowork certificate" loading="lazy" /></span><b>Introduction to Claude Cowork</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/mcp-intro.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/mcp-intro.webp" alt="Introduction to Model Context Protocol certificate" loading="lazy" /></span><b>Introduction to Model Context Protocol</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/mcp-advanced.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/mcp-advanced.webp" alt="Model Context Protocol: Advanced Topics certificate" loading="lazy" /></span><b>Model Context Protocol: Advanced Topics</b><em>Open certificate ↗</em></a>
+          <a class="cert" href="certificates/anthropic/subagents.pdf" target="_blank" rel="noopener" data-cursor="Open"><span class="cert__img"><img src="/certificates/anthropic/subagents.webp" alt="Introduction to Subagents certificate" loading="lazy" /></span><b>Introduction to Subagents</b><em>Open certificate ↗</em></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── STACK ───────────── -->
+    <section class="stack" id="stack">
+      <header class="section-head">
+        <p class="label" data-reveal>(06) Stack</p>
+        <h2 data-split>Everything I <em>build with.</em></h2>
+      </header>
+      <div class="ring" id="ring" aria-hidden="true"><div class="ring__spin" id="ringSpin"></div></div>
+      <div class="stack__groups" id="stackGroups"></div>
+    </section>
+
+    <!-- ───────────── ABOUT ───────────── -->
+    <section class="about" id="about">
+      <div class="about__space" aria-hidden="true"></div>
+      <div class="about__copy">
+        <p class="label" data-reveal>(07) About</p>
+        <h2 data-split>Secure code. <em>Clear thinking.</em></h2>
+        <p data-reveal>I am a full-stack developer with 4 years of experience building scalable web applications and AI-powered solutions with Java, Spring Boot, React, Node.js and AWS. I build cloud-native microservices and add LLM and RAG capabilities that automate workflows and improve search.</p>
+        <p data-reveal>My path started with a Bachelor’s in Electronics and Communication Engineering in Hyderabad, then software development at Corematiq, a cybersecurity internship at Palo Alto Networks, a Master’s in Information Systems Technologies at Wilmington University, and now full-stack and AI work at Citratek. Along the way I co-authored a published research paper on LoRa-based smart irrigation.</p>
+        <p data-reveal>That security background means I think about authentication, access control and the OWASP Top 10 while a feature is still being designed, not after it ships. I like work I can measure: faster responses, quicker deployments and less manual effort.</p>
+        <div class="about__metrics" data-reveal>
+          <div><b>4</b><span>years building software</span></div>
+          <div><b>1M+</b><span>security events analysed</span></div>
+          <div><b>80%</b><span>less educator workload</span></div>
+          <div><b>60%</b><span>better learning efficiency</span></div>
+          <div><b>~30%</b><span>faster API responses</span></div>
+          <div><b>~40%</b><span>faster deployments</span></div>
+          <div><b>5K+</b><span>documents in semantic search</span></div>
+          <div><b>900+</b><span>DSA problems solved</span></div>
+        </div>
+        <dl class="facts" data-reveal>
+          <div><dt>Education</dt><dd>Master’s, Wilmington</dd></div>
+          <div><dt>Certified</dt><dd>AWS × 3 · Anthropic × 10+</dd></div>
+          <div><dt>Grades</dt><dd>3.8 · 3.75</dd></div>
+        </dl>
+        <p class="about__caption" id="aboutCaption" data-reveal></p>
+      </div>
+    </section>
+
+    <!-- ───────────── CONTACT ───────────── -->
+    <section class="contact" id="contact">
+      <p class="label" data-reveal>(08) Contact</p>
+      <h2 class="contact__title" data-split>Have a product to ship <em>or an AI idea to build?</em></h2>
+      <a class="contact__mail" href="mailto:aryanmouli.ch@gmail.com?subject=Let%27s%20connect%20%E2%80%93%20enquiry%20from%20your%20portfolio&body=Hi%20Aryanmouli%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch%20about%20a%20professional%20opportunity%20and%20see%20whether%20we%20could%20work%20together.%0D%0A%0D%0AName%3A%0D%0ACompany%20%2F%20team%3A%0D%0ARole%20or%20project%3A%0D%0AWhat%20I%27d%20like%20to%20discuss%3A%0D%0ATimeline%3A%0D%0ABest%20way%20to%20reach%20me%3A%0D%0A%0D%0AI%27d%20be%20glad%20to%20share%20more%20context%2C%20or%20to%20set%20up%20a%20short%20call%20at%20a%20time%20that%20suits%20you.%20I%20look%20forward%20to%20hearing%20from%20you%20soon.%0D%0A%0D%0AKind%20regards%2C%0D%0A" data-magnetic data-cursor="Write">
+        <span>aryanmouli.ch@gmail.com</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </a>
+      <ul class="contact__links" data-reveal>
+        <li><a href="https://linkedin.com/in/aryanmouli-cherupalli" target="_blank" rel="noopener" data-cursor="Open"><span>LinkedIn</span><b>in/aryanmouli-cherupalli</b></a></li>
+        <li><a href="https://github.com/Aryanch1" target="_blank" rel="noopener" data-cursor="Open"><span>GitHub</span><b>@Aryanch1</b></a></li>
+        <li><a href="https://leetcode.com/u/Aryanmouli" target="_blank" rel="noopener" data-cursor="Open"><span>LeetCode</span><b>u/Aryanmouli</b></a></li>
+        <li><a href="https://www.geeksforgeeks.org/profile/aryanmov1z0?tab=activity" target="_blank" rel="noopener" data-cursor="Open"><span>GeeksforGeeks</span><b>@aryanmov1z0</b></a></li>
+        <li><a href="resume.pdf" download="Aryanmouli Cherupalli FullStack-AI Developer Resume.pdf" data-cursor="Download"><span>Resume</span><b>PDF ↓</b></a></li>
+      </ul>
+      <footer class="foot">
+        <p>© 2026 Aryanmouli Cherupalli</p>
+        <p>Let’s build something that lasts.</p>
+        <a href="#hero">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

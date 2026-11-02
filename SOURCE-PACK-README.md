@@ -1,6 +1,4 @@
-# Source pack — ruturaj-augmented-portfolio
 
-Complete source for this build, exactly as it was developed.
 
 ## Requirements
 
@@ -59,7 +57,4 @@ and scripts/sample-glb.mjs turn your versions into the files the site loads.
 
 ## Licence
 
-Commercial use permitted for your own and client projects. Reselling or
-redistributing the source or prompt itself is not permitted.
-
-— Brand Motion Studios · brandmotion.in
+Aryanmouli Cherupalli

@@ -5,7 +5,7 @@ Fetches live solved counts from LeetCode (public GraphQL) and GeeksforGeeks
 Every pattern is anchored to its DSA label so unrelated stats
 (years of experience, AWS certifications, project metrics) are never touched.
 Exits quietly if a source fails: no change beats a wrong number."""
-import json, re, sys, urllib.request
+import json, os, re, sys, urllib.request
 
 def fetch(url, data=None):
     req = urllib.request.Request(url, data=data, headers={
@@ -42,6 +42,15 @@ def main():
         print("updated DSA total to", total)
     else:
         print("already current:", total)
+    if os.path.exists("README.md"):
+        r = open("README.md", encoding="utf-8").read()
+        r2 = re.sub(r"DSA_problems-[0-9%2C]+%2B",
+                    "DSA_problems-" + format(total, ",").replace(",", "%2C") + "%2B", r)
+        r2 = re.sub(r"\*\*[\d,]+\+\*\*<br /><sub>DSA problems solved</sub>",
+                    "**" + format(total, ",") + "+**<br /><sub>DSA problems solved</sub>", r2)
+        if r2 != r:
+            open("README.md", "w", encoding="utf-8").write(r2)
+            print("README.md DSA total updated to", total)
     return 0
 
 if __name__ == "__main__":

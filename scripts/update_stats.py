@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Daily DSA counter updater for this portfolio site.
 Fetches live solved counts from LeetCode (public GraphQL) and GeeksforGeeks
-(public profile page) and rewrites the DSA totals in index.html.
+(public profile page) and rewrites ONLY the DSA totals in index.html.
+Every pattern is anchored to its DSA label so unrelated stats
+(years of experience, AWS certifications, project metrics) are never touched.
 Exits quietly if a source fails: no change beats a wrong number."""
 import json, re, sys, urllib.request
 
@@ -27,10 +29,14 @@ def main():
         print("stats fetch failed, leaving index.html unchanged:", e)
         return 0
     s = open("index.html", encoding="utf-8").read()
-    s2 = re.sub(r'data-count="\d+"', f'data-count="{total}"', s)
-    s2 = re.sub(r"(solved )[\d,]+\+", rf"\g<1>{total:,}+", s2)
-    s2 = re.sub(r"(Solved )[\d,]+\+", rf"\g<1>{total:,}+", s2)
-    s2 = re.sub(r"<b>[\d,]+\+</b>", f"<b>{total:,}+</b>", s2)
+    s2 = re.sub(r'(<dt>DSA problems solved</dt><dd><span data-count=")\d+(")',
+                lambda m: m.group(1) + str(total) + m.group(2), s)
+    s2 = re.sub(r"(solved )[\d,]+\+( data structures and algorithms)",
+                lambda m: m.group(1) + format(total, ",") + "+" + m.group(2), s2)
+    s2 = re.sub(r"(Solved )[\d,]+\+( data structures and algorithms)",
+                lambda m: m.group(1) + format(total, ",") + "+" + m.group(2), s2)
+    s2 = re.sub(r"<b>[\d,]+\+</b>(<span>DSA problems solved</span>)",
+                lambda m: "<b>" + format(total, ",") + "+</b>" + m.group(1), s2)
     if s2 != s:
         open("index.html", "w", encoding="utf-8").write(s2)
         print("updated DSA total to", total)

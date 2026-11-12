@@ -18,7 +18,7 @@
 [![Email](https://img.shields.io/badge/EMAIL-say_hello-8f7bff?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aryanmouli.ch@gmail.com)
 
 ![Experience](https://img.shields.io/badge/experience-4_years-ffb02e?style=flat-square)
-![DSA](https://img.shields.io/badge/DSA_problems-1%2C037%2B-ffb02e?style=flat-square)
+![DSA](https://img.shields.io/badge/DSA_problems-1%2C048%2B-ffb02e?style=flat-square)
 ![AWS](https://img.shields.io/badge/AWS_certified-3-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![Anthropic](https://img.shields.io/badge/Anthropic_certificates-12-d97757?style=flat-square)
 ![Three.js](https://img.shields.io/badge/WebGL-three.js-black?style=flat-square&logo=threedotjs&logoColor=white)
@@ -53,7 +53,7 @@ Every figure on the site is tied to a project, a role or a certificate you can o
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| **4**<br /><sub>years building software</sub> | **1,037+**<br /><sub>DSA problems solved</sub> | **15**<br /><sub>certifications<br />3 AWS · 12 Anthropic</sub> | **1M+**<br /><sub>security events analysed</sub> |
+| **4**<br /><sub>years building software</sub> | **1,048+**<br /><sub>DSA problems solved</sub> | **15**<br /><sub>certifications<br />3 AWS · 12 Anthropic</sub> | **1M+**<br /><sub>security events analysed</sub> |
 | **3**<br /><sub>microservices shipped<br />10 GraphQL operations</sub> | **~30%**<br /><sub>faster API responses<br />(Redis caching)</sub> | **~40%**<br /><sub>faster deployments<br />(Docker + CI/CD)</sub> | **80%**<br /><sub>less educator workload<br />(BridgeAI)</sub> |
 
 ---
